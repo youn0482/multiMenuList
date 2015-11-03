@@ -1,0 +1,19 @@
+{
+  "name": "ng-vibrate",
+  "version": "0.0.1",
+  "dependencies": {
+    "jquery": ">=1.6.0",
+    "angular": "~1"
+  },
+  "homepage": "https://github.com/odeds/ng-vibrate",
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.0.1",
+    "commit": "dc306641b4c69f1b8c6a9839fa74d767de514c9e"
+  },
+  "_source": "git://github.com/odeds/ng-vibrate.git",
+  "_target": "~0.0.1",
+  "_originalSource": "ng-vibrate",
+  "_direct": true
+}
