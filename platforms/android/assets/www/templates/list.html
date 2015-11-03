@@ -1,0 +1,34 @@
+   
+<ion-view view-title="List {{key}}">
+    <ion-nav-buttons side="right">
+          <button class="button button-icon ion-ios-trash" ng-click="clear()"></button>
+    </ion-nav-buttons>
+   <ion-content>
+    <ion-list>
+        <ion-item class="item item-checkbox item-button-right" ng-repeat="toDo in toDos track by $index">                 
+        <label class="checkbox">
+          <input type="checkbox" ng-model="toDo.isDone" ng-click="saveDone($index)">
+        </label>        
+    
+            {{toDo.text}}
+
+            <button class="button button-clear button-small" ng-click="delete($index)"><i class="icon ion-close-round"></i>
+                </button> 
+
+        </ion-item>
+        
+    </ion-list>
+</ion-content>
+
+<form name="itemInput" ng-submit="submit()">
+        <ion-footer-bar class="bar bar-footer item-input-inset">
+          <label class="item-input-wrapper">
+            <input name="text" class="itemAdd" type="text" placeholder="Add it to the list!" ng-model="text">
+          </label>
+          <button class="button button-clear button-positive" >
+              <i class="ion-plus-round"></i>
+            </button>
+
+        </ion-footer-bar>
+</form>
+</ion-view>
